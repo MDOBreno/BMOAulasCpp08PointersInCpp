@@ -14,12 +14,12 @@ int main(int argc, const char * argv[]) {
     //Na memoria de computador, todos os tipos da dados são representados por numeros
     // Nesta linha abaixo estamos apenas definindo que não importa como seja definido
     // para nos humanos, apenas aloque algum espaco na memoria minimo para preenchermos
-    // com alguma indormação.
+    // com alguma informação.
     void* ptrNull = nullptr; //Quando inicializamos com '0' ou 'nullptr', dizemos que é invalido
     
     int var = 5;
     
-    //Repare que, pelo processador/memoria ter enereco de 64bis(=8 Bytes), os 8 primeiros Bytes...
+    //Repare que, pelo processador/memoria ter endereco de 64bis(=8 Bytes), os 8 primeiros Bytes...
     void* ptrVoid = &var;      //...dessa variavel e da proxima são exatamente iguais.
     int*  ptrInt = &var;      //Note(Debug) tb que não há diferença entre esse ponteiro e o anterior...
     // ...independentemente do tipo[int, void,..] escolhido para armazenar o ponteiro.
